@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.logo > a > img{
+    max-width:200px;
+    max-height:150px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* cntrl e ; abre comentário */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: rgb(0, 208, 255);
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(0, 208, 255);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgba(0, 208, 255, 0.736);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    /* gap -> afastamento entre os elementos */
+}
+
+.topo-do-site h1{
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: rgb(0, 208, 255);
+}
+
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0px;
+}
+
+.img-topo-site img{
+    max-width: 400px;
+}
